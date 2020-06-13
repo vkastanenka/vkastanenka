@@ -58,3 +58,14 @@
     }
   }
 }
+
+.portfolio {
+  &__projects {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin: 2rem;
+    }
+  }
+}
