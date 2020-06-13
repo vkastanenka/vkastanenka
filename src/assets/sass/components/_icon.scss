@@ -1,0 +1,77 @@
+.icon {
+  transition: all 0.3s;
+
+  &--massive {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  &--larger {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &--large {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &--medium {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+
+  &--small {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &--primary {
+    fill: $color-primary-light;
+  }
+
+  &--primary-dark {
+    fill: $color-primary-dark;
+  }
+
+  &--primary-white {
+    fill: $color-primary-light;
+
+    &:hover {
+      fill: $color-white;
+    }
+  }
+
+  &--black-primary {
+    fill: $color-grey-dark-3;
+
+    &:hover {
+      fill: $color-primary-light;
+    }
+  }
+
+  &--white-primary {
+    fill: $color-white;
+
+    &:hover {
+      fill: $color-primary-light;
+    }
+  }
+
+  &--white {
+    fill: $color-white;
+  }
+
+  &--black {
+    fill: $color-grey-dark-3;
+  }
+
+  &--translate:hover,
+  &--translate-active {
+    transform: translateY(-2px);
+  }
+
+  &--active {
+    cursor: pointer;
+  }
+}
