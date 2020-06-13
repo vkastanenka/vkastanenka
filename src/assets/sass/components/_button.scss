@@ -1,0 +1,11 @@
+.btn {
+  cursor: pointer;
+
+  &--ghost {
+    color: $color-grey-light-1;
+    background: transparent;
+    border: 2px solid $color-grey-light-1;
+    padding: 1.5rem 6rem;
+    box-shadow: $box-shadow--1;
+  }
+}

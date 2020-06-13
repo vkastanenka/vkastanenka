@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  box-sizing: border-box;
+
+  @include respond(bp-big-desktop) {
+    font-size: 75%; // 1rem = 12px
+  }
+
+  @include respond(bp-largest) {
+    font-size: 59.375%; // 1rem = 9.5px
+  }
+
+  @include respond(bp-larger) {
+    font-size: 56.25%; // 1rem = 9px;
+  }
+
+  @include respond(bp-large) {
+    font-size: 53.125%; // 1rem = 8.5px
+  }
+
+  @include respond(bp-medium) {
+    font-size: 50%; // 1rem = 8px
+  }
+}
+
+body {
+  background-image: linear-gradient(
+      135deg,
+      rgba($color-primary, 0.8),
+      rgba($color-secondary, 0.8)
+    ),
+    url("../img/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+textarea {
+  resize: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
