@@ -5,6 +5,15 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+
+  &--contact {
+    padding: 6rem 0;
+    background-image: linear-gradient(
+      135deg,
+      $color-primary-light,
+      $color-primary-dark
+    );
+  }
 }
 
 .about {
@@ -106,6 +115,62 @@
 
     &--unselected {
       background-color: $color-grey-dark-3;
+    }
+  }
+}
+
+.contact {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.8) 0%,
+      rgba($color-white, 0.8) 50%,
+      transparent 50%
+    ),
+    url("../img/landing.jpg");
+
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: $box-shadow--3;
+
+  @include respond(bp-medium) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.8) 0%,
+        rgba($color-white, 0.8) 55%,
+        transparent 55%
+      ),
+      url("../img/landing.jpg");
+  }
+
+  @include respond(bp-small) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.8),
+        rgba($color-white, 0.8)
+      ),
+      url("../img/landing.jpg");
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(bp-medium) {
+      width: 55%;
+    }
+
+    @include respond(bp-small) {
+      width: 100%;
+    }
+
+    @include respond(bp-smaller) {
+      padding: 6rem 3rem;
+    }
+
+    @include respond(bp-smallest) {
+      padding: 6rem 2rem;
     }
   }
 }

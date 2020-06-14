@@ -8,6 +8,7 @@ import About from "./Layout/About";
 import Portfolio from "./Layout/Portfolio";
 import Skills from "./Layout/Skills";
 import Testimonials from "./Layout/Testimonials";
+import Contact from "./Layout/Contact";
 
 class Landing extends Component {
   render() {
@@ -19,6 +20,9 @@ class Landing extends Component {
           <Portfolio />
           <Skills />
           <Testimonials />
+          <div className="section--contact">
+            <Contact />
+          </div>
         </main>
       </Auxiliary>
     );
