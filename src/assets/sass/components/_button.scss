@@ -1,5 +1,30 @@
 .btn {
   cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+
+  &:target,
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    background-color: transparent;
+    border: 2px solid $color-primary-dark;
+    color: $color-primary-dark;
+    box-shadow: $box-shadow--3;
+
+    &:hover {
+      color: $color-grey-light-1;
+      background-color: $color-primary-dark;
+      border: 2px solid transparent;
+    }
+  }
+
+  &--small {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
 
   &--ghost {
     color: $color-grey-light-1;

@@ -6,6 +6,11 @@
     width: 7rem;
   }
 
+  &--x-larger {
+    height: 6rem;
+    width: 6rem;
+  }
+
   &--larger {
     height: 3rem;
     width: 3rem;
@@ -50,6 +55,14 @@
     }
   }
 
+  &--black-primary-dark {
+    fill: $color-grey-dark-3;
+
+    &:hover {
+      fill: $color-primary-dark;
+    }
+  }
+
   &--white-primary {
     fill: $color-white;
 
@@ -59,7 +72,7 @@
   }
 
   &--white {
-    fill: $color-grey-light-1;;
+    fill: $color-grey-light-1;
   }
 
   &--black {

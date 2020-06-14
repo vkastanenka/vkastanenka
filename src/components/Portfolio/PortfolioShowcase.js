@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const PortfolioProject = (props) => {
+const PortfolioShowcase = (props) => {
   return (
     <div className="portfolio-project">
       <div className="portfolio-project__info">
@@ -11,7 +11,7 @@ const PortfolioProject = (props) => {
           <p className="text-large">{props.build}</p>
         </div>
         <div className="portfolio-project__info--popup-cta">
-          <button className="btn" onClick={props.setPopup}>
+          <button className="btn btn--ghost" onClick={props.setPopup}>
             Learn More
           </button>
         </div>
@@ -25,11 +25,11 @@ const PortfolioProject = (props) => {
   );
 };
 
-PortfolioProject.propTypes = {
+PortfolioShowcase.propTypes = {
   name: PropTypes.string.isRequired,
   build: PropTypes.string.isRequired,
   setPopup: PropTypes.func.isRequired,
   image: PropTypes.string.isRequired,
 };
 
-export default PortfolioProject;
+export default PortfolioShowcase;
