@@ -5,8 +5,9 @@ import React, { Component } from "react";
 import Auxiliary from "../../components/HigherOrder/Auxiliary";
 import Header from "./Layout/Header";
 import About from "./Layout/About";
-import Portfolio from './Layout/Portfolio';
-import Skills from './Layout/Skills';
+import Portfolio from "./Layout/Portfolio";
+import Skills from "./Layout/Skills";
+import Testimonials from "./Layout/Testimonials";
 
 class Landing extends Component {
   render() {
@@ -17,6 +18,7 @@ class Landing extends Component {
           <About />
           <Portfolio />
           <Skills />
+          <Testimonials />
         </main>
       </Auxiliary>
     );

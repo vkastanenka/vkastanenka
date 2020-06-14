@@ -33,7 +33,7 @@ class PortfolioPopup extends Component {
                 className="icon icon--x-larger icon--white icon--active portfolio-popup__icon-gallery-backward"
                 onClick={() => {
                   if (currentFeature === 0) {
-                    this.setState({ currentFeature: 4 });
+                    this.setState({ currentFeature: features.length - 1 });
                   } else {
                     this.setState((prevState) => ({
                       currentFeature: prevState.currentFeature - 1,
@@ -45,7 +45,7 @@ class PortfolioPopup extends Component {
                 type="chevron-with-circle-right"
                 className="icon icon--x-larger icon--white icon--active portfolio-popup__icon-gallery-forward"
                 onClick={() => {
-                  if (currentFeature === 4) {
+                  if (currentFeature === features.length - 1) {
                     this.setState({ currentFeature: 0 });
                   } else {
                     this.setState((prevState) => ({

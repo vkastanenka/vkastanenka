@@ -95,8 +95,8 @@ class Portfolio extends Component {
             },
           ]}
           name="DevConnector"
-          description="Social Network for Developers"
-          summary="DevConnector is a social network designed for developers in mind. Users can create an account, follow users, create posts and comments, develop profiles, and search for other developers."
+          description="Social Media Network for Developers"
+          summary="DevConnector is a social media network designed for developers in mind. Users can create an account, follow users, create posts and comments, develop profiles, and search for other developers."
           projectLink="https://vkastanenka-devconnector.herokuapp.com/"
           repositoryLink="https://github.com/vkastanenka/devconnector"
         />

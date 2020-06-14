@@ -10,7 +10,7 @@ const About = () => {
       <h2 className="heading-secondary fc-primary-dark ma-bt--md text-shadow">About Me</h2>
       <div className="about__introduction">
         <h3 className="heading-tertiary">
-          Allow me to formally introduce myself. I'm Victoria
+          Allow me to formally introduce myself. I'm Victoria.
         </h3>
         <p className="text-large">
           Since beginning my coding journey one year ago, I have dedicated
