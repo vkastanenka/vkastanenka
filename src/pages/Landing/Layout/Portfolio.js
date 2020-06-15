@@ -106,7 +106,7 @@ class Portfolio extends Component {
     return (
       <Auxiliary>
         {popup}
-        <section className="section portfolio">
+        <section className="section portfolio" id='portfolio'>
           <h2 className="heading-secondary fc-primary-dark ma-bt--md text-shadow">
             Developer Portfolio
           </h2>

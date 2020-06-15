@@ -28,9 +28,20 @@
 
   &--ghost {
     color: $color-grey-light-1;
-    background: transparent;
-    border: 2px solid $color-grey-light-1;
-    padding: 1.5rem 6rem;
-    box-shadow: $box-shadow--1;
+    background-color: rgba($color-grey-light-1, 0.15);
+    padding: 1.5rem 5rem;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+
+    & > :first-child {
+      margin-right: 1.5rem;
+    }
   }
 }

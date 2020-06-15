@@ -6,7 +6,7 @@ import Icon from "../../../components/Icon/Icon";
 
 const About = () => {
   return (
-    <section className="section about fc-grey-dark-3">
+    <section className="section about fc-grey-dark-3" id='about'>
       <h2 className="heading-secondary fc-primary-dark ma-bt--md text-shadow">About Me</h2>
       <div className="about__introduction">
         <h3 className="heading-tertiary">

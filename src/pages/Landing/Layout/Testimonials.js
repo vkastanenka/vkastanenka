@@ -30,14 +30,17 @@ class Testimonials extends Component {
     ];
     const testimonialSelect = testimonials.map((t, i) =>
       i === currentTestimonial ? (
-        <div className="testimonials__select-view testimonials__select-view--selected" />
+        <div key={i} className="testimonials__select-view testimonials__select-view--selected" />
       ) : (
-        <div className="testimonials__select-view testimonials__select-view--unselected" />
+        <div key={i} className="testimonials__select-view testimonials__select-view--unselected" />
       )
     );
 
     return (
-      <section className="section testimonials fc-grey-dark-3">
+      <section
+        className="section testimonials fc-grey-dark-3"
+        id="testimonials"
+      >
         <div className="testimonials__heading">
           <h2 className="heading-secondary fc-primary-dark ma-bt--md text-shadow">
             Testimonials

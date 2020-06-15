@@ -16,7 +16,7 @@ function App() {
       <ScrollToTop>
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route path="/*" component={ErrorPage} />
+          {/* <Route path="/*" component={ErrorPage} /> */}
         </Switch>
       </ScrollToTop>
     </BrowserRouter>

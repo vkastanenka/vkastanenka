@@ -20,7 +20,7 @@ class Landing extends Component {
           <Portfolio />
           <Skills />
           <Testimonials />
-          <div className="section--contact">
+          <div className="section--contact" id='contact'>
             <Contact />
           </div>
         </main>
