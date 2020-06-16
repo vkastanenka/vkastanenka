@@ -8,7 +8,7 @@ import ScrollLink from "../HigherOrder/ScrollLink";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__content">
+      <div className="footer__content fc-grey-light-1">
         <div className="footer__info">
           <p className='text-larger fw-medium'>Victoria Kastanenka</p>
           <p className='text-larger fw-medium'>&copy; {new Date().getFullYear()}</p>

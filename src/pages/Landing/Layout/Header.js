@@ -15,7 +15,7 @@ class Header extends Component {
     return (
       <header className="header" id='home'>
         <ShootingStars />
-        <div className="header__content">
+        <div className="header__content fc-grey-light-1">
           <nav className="header__nav ma-bt--md">
             <ul className="header__nav-list header__nav-list--left">
               <li className="header__nav-list-item fw-medium text-larger">

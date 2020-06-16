@@ -25,6 +25,13 @@ $color-grey-dark-6: #111;
 $color-white: #fff;
 $color-black: #000;
 
+// Backgrounds
+$gradient-primary: linear-gradient(
+  135deg,
+  rgba($color-primary, 1),
+  rgba($color-primary-dark, 1)
+);
+
 // SHADOWS
 $box-shadow--1: 2px 2px 10px rgba($color-black, 0.75);
 $box-shadow--2: 2px 0px 10px rgba($color-black, 0.75);
