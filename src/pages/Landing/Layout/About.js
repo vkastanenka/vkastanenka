@@ -24,9 +24,9 @@ const About = () => {
             bring 100% to both myself, and those that I work with.{" "}
           </p>
         </div>
-        <div className="about__perks">
-          <div className="about__perk">
-            <div className="about__perk-icon">
+        <div className="perks">
+          <div className="perks__perk">
+            <div className="perks__perk-icon">
               <Icon
                 type="user"
                 className="icon icon--massive icon--primary-dark"
@@ -37,8 +37,8 @@ const About = () => {
               Strong interaction for maximum satisfaction
             </p>
           </div>
-          <div className="about__perk">
-            <div className="about__perk-icon">
+          <div className="perks__perk">
+            <div className="perks__perk-icon">
               <Icon
                 type="laptop"
                 className="icon icon--massive icon--primary-dark"
@@ -49,8 +49,8 @@ const About = () => {
               Individually made from start to finish
             </p>
           </div>
-          <div className="about__perk">
-            <div className="about__perk-icon">
+          <div className="perks__perk">
+            <div className="perks__perk-icon">
               <Icon
                 type="graduation-cap"
                 className="icon icon--massive icon--primary-dark"
@@ -61,8 +61,8 @@ const About = () => {
               Self taught in full stack development
             </p>
           </div>
-          <div className="about__perk">
-            <div className="about__perk-icon">
+          <div className="perks__perk">
+            <div className="perks__perk-icon">
               <Icon
                 type="network"
                 className="icon icon--massive icon--primary-dark"

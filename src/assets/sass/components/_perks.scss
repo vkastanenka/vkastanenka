@@ -1,0 +1,33 @@
+.perks {
+  display: flex;
+  padding: 0 2rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    width: 90rem;
+    height: 2px;
+    background-color: $color-grey-dark-1;
+  }
+
+  &__perk-icon {
+    position: relative;
+    margin-bottom: 4rem;
+
+    &::before {
+      content: "";
+      @extend %abs-center;
+      z-index: -1;
+      border-radius: 50%;
+      border: 2px solid $color-grey-dark-1;
+      height: 12rem;
+      width: 12rem;
+      background-color: $color-grey-light-1;
+    }
+  }
+}
