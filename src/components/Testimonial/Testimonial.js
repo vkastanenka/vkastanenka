@@ -21,7 +21,7 @@ const Testimonial = (props) => {
       <div className="testimonial__identity">
         <p className="text-larger fw-medium ma-bt--1">{props.name}</p>
         <a
-          className="btn btn--small btn--primary"
+          className="btn btn--icon btn--small btn--ghost-border btn--shadow"
           target="_blank"
           rel="noopener noreferrer"
           href={props.websiteLink}

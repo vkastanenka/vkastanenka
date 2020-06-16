@@ -2,8 +2,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-
-
 // Components
 import Icon from "../Icon/Icon";
 import Popup from "../HigherOrder/Popup";
@@ -81,7 +79,7 @@ class PortfolioPopup extends Component {
                 rel="noopener noreferrer"
                 href={this.props.projectLink}
               >
-                <button className="btn btn--small btn--primary">
+                <button className="btn btn--icon btn--small btn--ghost-border btn--shadow">
                   <span>View Site</span>
                   <Icon
                     type="network"
@@ -94,7 +92,7 @@ class PortfolioPopup extends Component {
                 rel="noopener noreferrer"
                 href={this.props.repositoryLink}
               >
-                <button className="btn btn--small btn--primary">
+                <button className="btn btn--icon btn--small btn--ghost-border btn--shadow">
                   <span>View Repository</span>
                   <Icon
                     type="github"

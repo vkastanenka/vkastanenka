@@ -11,7 +11,7 @@ const PortfolioShowcase = (props) => {
           <p className="text-large">{props.build}</p>
         </div>
         <div className="portfolio-project__info--popup-cta">
-          <button className="btn btn--ghost" onClick={props.setPopup}>
+          <button className="btn btn--small btn--ghost-border btn--shadow" onClick={props.setPopup}>
             Learn More
           </button>
         </div>

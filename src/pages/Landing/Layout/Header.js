@@ -13,7 +13,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="header" id='home'>
+      <header className="header" id="home">
         <ShootingStars />
         <div className="header__content fc-grey-light-1">
           <nav className="header__nav ma-bt--md">
@@ -95,7 +95,7 @@ class Header extends Component {
             </p>
           </div>
           <ScrollLink section="portfolio">
-            <button className="btn btn--ghost text-large btn--icon">
+            <button className="btn btn--icon btn--large btn--ghost btn--hover-secondary">
               <span>Explore my work</span>
               <Icon
                 type="chevron-with-circle-right"
