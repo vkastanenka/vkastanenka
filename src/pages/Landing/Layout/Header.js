@@ -13,7 +13,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="header">
+      <header className="header" id='home'>
         <ShootingStars />
         <div className="header__content">
           <nav className="header__nav ma-bt--md">
