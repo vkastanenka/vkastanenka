@@ -106,23 +106,25 @@ class Portfolio extends Component {
     return (
       <Auxiliary>
         {popup}
-        <section className="section portfolio" id='portfolio'>
-          <h2 className="heading-secondary fc-primary-dark ma-bt--md text-shadow">
-            Developer Portfolio
-          </h2>
-          <div className="portfolio__projects">
-            <PortfolioShowcase
-              name="Natours"
-              build="React JS / Node.js"
-              setPopup={() => this.setState({ viewing: "Natours" })}
-              image={require("../../../assets/img/natours--header.png")}
-            />
-            <PortfolioShowcase
-              name="DevConnector"
-              build="React JS / Node.js"
-              setPopup={() => this.setState({ viewing: "DevConnector" })}
-              image={require("../../../assets/img/devconnector--user-page.png")}
-            />
+        <section className="portfolio fc-grey-dark-3" id="portfolio">
+          <div className="section portfolio__content ta-center">
+            <h2 className="heading-secondary section__heading ma-bt--4">
+              Developer Portfolio
+            </h2>
+            <div className="portfolio__projects">
+              <PortfolioShowcase
+                name="Natours"
+                build="React JS / Node.js"
+                setPopup={() => this.setState({ viewing: "Natours" })}
+                image={require("../../../assets/img/natours--header.png")}
+              />
+              <PortfolioShowcase
+                name="DevConnector"
+                build="React JS / Node.js"
+                setPopup={() => this.setState({ viewing: "DevConnector" })}
+                image={require("../../../assets/img/devconnector--user-page.png")}
+              />
+            </div>
           </div>
         </section>
       </Auxiliary>
