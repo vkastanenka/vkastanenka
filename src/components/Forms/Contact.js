@@ -111,7 +111,7 @@ class Contact extends Component {
         ) : null}
         <form onSubmit={this.handleSubmit} className="form fc-grey-dark-3">
           <div className="ma-bt--md">
-            <h2 className="heading-secondary fc-primary-dark ma-bt--md text-shadow">
+            <h2 className="heading-secondary section__heading">
               Contact Me
             </h2>
           </div>
@@ -163,7 +163,7 @@ class Contact extends Component {
           <div className="form__group">
             <button
               type="submit"
-              className="btn btn--small btn--primary"
+              className="btn btn--large btn--ghost-border btn--shadow"
               disabled={this.state.disableSubmitButton}
             >
               {!this.state.submitting ? "Submit email" : "Submitting email..."}

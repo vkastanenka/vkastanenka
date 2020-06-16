@@ -17,7 +17,7 @@ class PortfolioPopup extends Component {
 
     return (
       <Popup>
-        <div className="portfolio-popup fc-grey-dark-3">
+        <div className="portfolio-popup">
           <div className="portfolio-popup__showcase">
             <div className="portfolio-popup__gallery">
               {/* eslint-disable-next-line */}
@@ -72,7 +72,7 @@ class PortfolioPopup extends Component {
               </h3>
               <p className="text-large fw-medium">{this.props.description}</p>
             </div>
-            <p className="ma-bt--md">{this.props.summary}</p>
+            <p className="ma-bt--2">{this.props.summary}</p>
             <div className="portfolio-popup__links">
               <a
                 target="_blank"

@@ -1,12 +1,13 @@
 .portfolio-popup {
-  max-width: calc(19.2rem * 4);
+  width: calc(19.2rem * 4);
   background-color: $color-grey-light-1;
   box-shadow: $box-shadow--1;
 
   &__gallery {
     position: relative;
-    // max-height: calc(10.8rem * 4);
-    border-bottom: $color-grey-dark-4 1.5rem solid;
+    border-bottom: $color-primary-darker 1.5rem solid;
+    width: calc(19.2rem * 4);
+    height: calc(10.8rem * 4 + 1.5rem);
   }
 
   &__icon-close {
@@ -20,11 +21,11 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba($color-black, 0.1);
+    background-color: rgba($color-black, 0.2);
     padding: 1rem 0.5rem;
 
     &:hover {
-      background-color: rgba($color-black, 0.2);
+      background-color: rgba($color-black, 0.3);
     }
   }
 
@@ -37,8 +38,8 @@
   }
 
   &__image {
-    width: calc(19.2rem * 4);
-    height: calc(10.8rem * 4);
+    width: 100%;
+    height: 100%;
   }
 
   &__feature {
@@ -48,8 +49,8 @@
     transform: translateY(-0.65rem);
     width: 100%;
     position: absolute;
-    bottom: 0;
-    background-color: rgba($color-black, 0.65);
+    bottom: -0.72rem;
+    background-color: rgba($color-black, 0.75);
   }
 
   &__description {
