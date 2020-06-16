@@ -95,7 +95,7 @@ class Header extends Component {
             </p>
           </div>
           <ScrollLink section="portfolio">
-            <button className="btn btn--icon btn--large btn--ghost btn--hover-secondary">
+            <button className="btn btn--icon btn--large btn--ghost btn--hover-primary-dark">
               <span>Explore my work</span>
               <Icon
                 type="chevron-with-circle-right"

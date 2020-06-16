@@ -5,8 +5,9 @@ $section-width: 114rem;
 $color-primary-light: #efdee4;
 $color-primary: #c993b5;
 $color-primary-dark: #8e719d;
-$color-secondary-light: #84a7cd;
-$color-secondary: #1d5f91;
+$color-primary-darker: #802f8b;
+$color-secondary-light: #4f94df;
+$color-secondary: #3190da;
 $color-secondary-dark: #102b58;
 
 $color-danger: #eb4d4b;
@@ -28,9 +29,16 @@ $color-black: #000;
 // Backgrounds
 $gradient-primary: linear-gradient(
   90deg,
-  rgba($color-primary, 1),
-  rgba($color-primary-dark, 1)
+  rgba($color-primary-dark, 1),
+  rgba($color-primary-darker, 1)
 );
+
+$gradient-secondary: linear-gradient(
+    135deg,
+    rgba($color-secondary, 0.4),
+    rgba($color-secondary-dark, 0.6)
+  ),
+  url("../img/background--1.jpg");
 
 // SHADOWS
 $box-shadow--1: 2px 2px 10px rgba($color-black, 0.75);

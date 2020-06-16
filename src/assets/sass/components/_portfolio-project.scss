@@ -13,11 +13,8 @@
     left: -5rem;
     height: 60rem;
     width: 70rem;
-    background-image: linear-gradient(
-      135deg,
-      rgba($color-secondary-light, 1),
-      rgba($color-secondary, 1)
-    );
+    background-image: $gradient-secondary;
+    @extend %background-cover;
     transform: rotate(-30deg) translateX(-70rem);
     z-index: 1;
     backdrop-filter: blur(2px);
@@ -29,18 +26,15 @@
     position: absolute;
     transition: all 0.3s;
     transition-delay: 0.1s;
-    top: -35rem;
+    top: -39.2rem;
     left: 10rem;
-    height: 60rem;
+    height: 70rem;
     width: 20rem;
-    background-image: linear-gradient(
-      135deg,
-      rgba($color-primary-light, 1),
-      rgba($color-primary, 1)
-    );
+    background-image: $gradient-primary;
     transform: rotate(80deg) translateX(-14rem);
     z-index: 2;
     box-shadow: $box-shadow--2;
+    opacity: 1;
   }
 
   &__info {
@@ -69,11 +63,11 @@
   &:hover {
     .portfolio-project__info {
       &--name-build {
-        transform: translateY(calc(-3rem));
+        transform: translateY(calc(-1rem));
       }
 
       &--popup-cta {
-        transform: translateY(calc(3rem));
+        transform: translateY(calc(1rem));
       }
     }
 
@@ -82,7 +76,7 @@
     }
 
     &::after {
-      transform: rotate(75deg) translateX(0);
+      transform: rotate(80deg) translateX(0);
     }
   }
 }

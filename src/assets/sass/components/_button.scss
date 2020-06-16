@@ -25,6 +25,24 @@
   &--small {
     padding: 1rem 2rem;
   }
+
+  &--primary-dark {
+    color: $color-grey-light-1;
+    background-color: $color-primary-darker;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &--secondary {
+    color: $color-grey-light-1;
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: $color-secondary-light;
+    }
+  }
   
   &--ghost {
     color: $color-grey-light-1;
@@ -41,6 +59,10 @@
       background-color: $color-primary-dark;
       border: 2px solid transparent;
     }
+  }
+
+  &--hover-primary-dark:hover {
+    background-color: $color-primary-darker;
   }
 
   &--hover-secondary:hover {
