@@ -33,6 +33,13 @@ $gradient-primary: linear-gradient(
   rgba($color-primary-darker, 1)
 );
 
+$gradient-background-1: linear-gradient(
+    135deg,
+    rgba($color-primary-darker, 0.5),
+    rgba($color-secondary-dark, 0.5)
+  ),
+  url("../img/landing.jpg");
+
 $gradient-secondary: linear-gradient(
     135deg,
     rgba($color-secondary, 0.4),

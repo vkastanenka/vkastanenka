@@ -1,3 +1,89 @@
+.nav-large {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+
+  &__nav-list {
+    display: flex;
+    width: 40rem;
+    justify-content: space-between;
+    position: relative;
+
+    &--left::before,
+    &--right::after {
+      content: "";
+      height: 0.3rem;
+      width: 50.5rem;
+      position: absolute;
+      background-color: $color-grey-light-1;
+    }
+
+    &--left::before {
+      top: -1rem;
+      left: -3rem;
+    }
+
+    &--right::after {
+      bottom: -1rem;
+      right: -3rem;
+    }
+  }
+
+  &__nav-list-item {
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: "";
+      @extend %abs-center;
+      width: 0%;
+      height: 100%;
+      background-color: rgba($color-grey-light-1, 0.3);
+      z-index: -1;
+      transition: all 0.3s;
+      border-radius: 10px;
+    }
+
+    &:hover::before {
+      width: 130%;
+    }
+  }
+
+  &__nav-logo-container {
+    height: 21rem;
+    width: 21rem;
+    margin: 0 5rem;
+    border-radius: 50%;
+    border: 0.4rem solid $color-grey-light-1;
+    padding: 2.5rem;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 0.4rem;
+      height: 5.5rem;
+      background-color: $color-grey-light-1;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      bottom: 0;
+    }
+
+    &::after {
+      top: 0;
+    }
+  }
+
+  &__nav-logo {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .nav {
   background-image: $gradient-primary;
   position: sticky;

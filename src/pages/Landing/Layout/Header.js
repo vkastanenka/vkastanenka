@@ -4,50 +4,17 @@ import ScrollLink from "../../../components/HigherOrder/ScrollLink";
 
 // Components
 import Icon from "../../../components/Icon/Icon";
+import NavLarge from "../../../components/Layout/NavLarge";
 import ShootingStars from "../../../components/ShootingStars/ShootingStars";
 
 class Header extends Component {
-  state = {
-    viewingMobile: false,
-  };
-
   render() {
     return (
       <header className="header" id="home">
         <ShootingStars />
-        <div className="header__content fc-grey-light-1">
-          <nav className="header__nav ma-bt--md">
-            <ul className="header__nav-list header__nav-list--left">
-              <li className="header__nav-list-item fw-medium text-larger">
-                <ScrollLink section="about">About</ScrollLink>
-              </li>
-              <li className="header__nav-list-item fw-medium text-larger">
-                <ScrollLink section="portfolio">Portfolio</ScrollLink>
-              </li>
-              <li className="header__nav-list-item fw-medium text-larger">
-                <ScrollLink section="skills">Skills</ScrollLink>
-              </li>
-            </ul>
-            <div className="header__nav-logo-container">
-              <img
-                src={require("../../../assets/img/pyramid-logo--white.png")}
-                alt="Logo"
-                className="header__nav-logo"
-              />
-            </div>
-            <ul className="header__nav-list header__nav-list--right">
-              <li className="header__nav-list-item fw-medium text-larger">
-                <ScrollLink section="testimonials">Testimonials</ScrollLink>
-              </li>
-              <li className="header__nav-list-item fw-medium text-larger">
-                <ScrollLink section="contact">Contact</ScrollLink>
-              </li>
-              <li className="header__nav-list-item fw-medium text-larger">
-                <ScrollLink section="resume">Resume</ScrollLink>
-              </li>
-            </ul>
-          </nav>
-          <div className="header__links">
+        <div className="header__content fc-grey-light-1 ta-center">
+          <NavLarge/>
+          <div className="header__links ma-bt--2">
             <div className="header__links--left">
               <a
                 target="_blank"
