@@ -8,8 +8,12 @@ import ContactForm from "../../../components/Forms/Contact";
 const Contact = () => {
   return (
     <section className="contact">
-      <div className="contact__form">
-        <ContactForm />
+      <div className="section contact__content">
+        <div className="contact__card">
+          <div className="contact__form">
+            <ContactForm />
+          </div>
+        </div>
       </div>
     </section>
   );
