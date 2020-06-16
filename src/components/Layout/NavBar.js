@@ -2,6 +2,7 @@
 import React from "react";
 
 // Components
+import Icon from '../Icon/Icon';
 import ScrollLink from "../HigherOrder/ScrollLink";
 
 const NavBar = () => {
@@ -26,8 +27,9 @@ const NavBar = () => {
         <li className="nav__list-item">
           <ScrollLink section="contact">Contact</ScrollLink>
         </li>
-        <li className="nav__list-item">
+        <li className="nav__list-item nav__list-item--icon">
           <ScrollLink section="resume">Resume</ScrollLink>
+          <Icon type='download' className='icon icon--white icon--large' />
         </li>
       </ul>
     </nav>

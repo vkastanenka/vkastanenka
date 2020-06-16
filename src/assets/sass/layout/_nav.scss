@@ -85,26 +85,13 @@
 }
 
 .nav {
-  background-image: $gradient-primary;
+  background-color: $color-primary-darker;
   position: sticky;
   top: 0;
   padding: 1.5rem 0;
   z-index: 500;
   box-shadow: $box-shadow--2;
   border-bottom: 0.2rem solid $color-secondary-dark;
-
-  &__logo-container {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    border: 0.2rem solid $color-grey-light-1;
-    padding: 0.5rem;
-  }
-
-  &__logo {
-    width: 100%;
-    height: 100%;
-  }
 
   &__list {
     display: flex;
@@ -121,9 +108,23 @@
   &__list-item {
     cursor: pointer;
     transition: all 0.3s;
+    position: relative;
 
     &:hover {
-      color: $color-primary-light;
+      color: $color-primary-dark;
+    }
+
+    &--icon {
+      display: flex;
+      align-items: center;
+
+      & > :first-child {
+        margin-right: 1rem;
+      }
+
+      &:hover > svg {
+        fill: $color-primary-dark;
+      }
     }
   }
 }
