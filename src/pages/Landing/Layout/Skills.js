@@ -4,7 +4,7 @@ import DevIcon from "devicon-react-svg";
 
 const Skills = () => {
   return (
-    <section className="section skills" id="skills">
+    <section className="skills" id="skills">
       <div className="section skills__content ta-center">
         <h2 className="heading-secondary section__heading">
           Technological Skills

@@ -15,11 +15,11 @@ const Testimonial = (props) => {
           className="testimonial__image"
         />
       </div>
-      <h3 className="text-larger fw-medium text-shadow ma-bt--lg">
+      <p className="text-larger fw-medium text-shadow ma-bt--2">
         {props.testimonial}
-      </h3>
+      </p>
       <div className="testimonial__identity">
-        <p className="text-larger fw-medium ma-bt--sm">{props.name}</p>
+        <p className="text-larger fw-medium ma-bt--1">{props.name}</p>
         <a
           className="btn btn--small btn--primary"
           target="_blank"

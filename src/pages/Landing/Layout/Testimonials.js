@@ -30,56 +30,59 @@ class Testimonials extends Component {
     ];
     const testimonialSelect = testimonials.map((t, i) =>
       i === currentTestimonial ? (
-        <div key={i} className="testimonials__select-view testimonials__select-view--selected" />
+        <div
+          key={i}
+          className="testimonials__select-view testimonials__select-view--selected"
+        />
       ) : (
-        <div key={i} className="testimonials__select-view testimonials__select-view--unselected" />
+        <div
+          key={i}
+          className="testimonials__select-view testimonials__select-view--unselected"
+        />
       )
     );
 
     return (
-      <section
-        className="section testimonials fc-grey-dark-3"
-        id="testimonials"
-      >
-        <div className="testimonials__heading">
-          <h2 className="heading-secondary fc-primary-dark ma-bt--md text-shadow">
-            Testimonials
-          </h2>
-          <h3 className="heading-tertiary">
+      <section className="testimonials" id="testimonials">
+        <div className="section testimonials__content ta-center">
+          <h2 className="heading-secondary section__heading">Testimonials</h2>
+          <h3 className="heading-tertiary ma-bt--2">
             From individuals who I have had the pleasure of working with.
           </h3>
-        </div>
-        <div className="testimonials__testimonials">
-          {testimonials[currentTestimonial]}
-        </div>
-        <div className="testimonials__select">
-          <Icon
-            type="arrow-with-circle-left"
-            className="icon icon--larger icon--black-primary icon--active icon--translate"
-            onClick={() => {
-              if (currentTestimonial === 0) {
-                this.setState({ currentTestimonial: testimonials.length - 1 });
-              } else {
-                this.setState((prevState) => ({
-                  currentTestimonial: prevState.currentTestimonial - 1,
-                }));
-              }
-            }}
-          />
-          <div className="testimonials__selects">{testimonialSelect}</div>
-          <Icon
-            type="arrow-with-circle-right"
-            className="icon icon--larger icon--black-primary icon--active icon--translate"
-            onClick={() => {
-              if (currentTestimonial === testimonials.length - 1) {
-                this.setState({ currentTestimonial: 0 });
-              } else {
-                this.setState((prevState) => ({
-                  currentTestimonial: prevState.currentTestimonial + 1,
-                }));
-              }
-            }}
-          />
+          <div className="testimonials__testimonials ma-bt--3">
+            {testimonials[currentTestimonial]}
+          </div>
+          <div className="testimonials__select">
+            <Icon
+              type="chevron-with-circle-left"
+              className="icon icon--larger icon--black-primary icon--active icon--translate"
+              onClick={() => {
+                if (currentTestimonial === 0) {
+                  this.setState({
+                    currentTestimonial: testimonials.length - 1,
+                  });
+                } else {
+                  this.setState((prevState) => ({
+                    currentTestimonial: prevState.currentTestimonial - 1,
+                  }));
+                }
+              }}
+            />
+            <div className="testimonials__selects">{testimonialSelect}</div>
+            <Icon
+              type="chevron-with-circle-right"
+              className="icon icon--larger icon--black-primary icon--active icon--translate"
+              onClick={() => {
+                if (currentTestimonial === testimonials.length - 1) {
+                  this.setState({ currentTestimonial: 0 });
+                } else {
+                  this.setState((prevState) => ({
+                    currentTestimonial: prevState.currentTestimonial + 1,
+                  }));
+                }
+              }}
+            />
+          </div>
         </div>
       </section>
     );
