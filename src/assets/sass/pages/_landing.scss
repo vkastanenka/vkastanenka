@@ -30,12 +30,6 @@
 }
 
 .skills {
-  & i {
-    background-color: $color-primary;
-    height: 10npm rem;
-    width: 10npm rem;
-  }
-
   &__skill {
     background-color: $color-primary;
     display: flex;
@@ -51,16 +45,16 @@
 }
 
 .testimonials {
-    background-image: linear-gradient(
-      135deg,
-      rgba($color-primary, 0.5),
-      rgba($color-secondary, 0.5)
-    ),
-    url("../img/background--1.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  //   background-image: linear-gradient(
+  //     135deg,
+  //     rgba($color-primary, 0.5),
+  //     rgba($color-secondary, 0.5)
+  //   ),
+  //   url("../img/background--1.jpg");
+  // background-attachment: fixed;
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
 
   &__heading {
     text-align: center;
