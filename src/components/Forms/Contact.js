@@ -152,7 +152,7 @@ class Contact extends Component {
           <TextAreaGroup
             name="senderText"
             id="senderText"
-            inputClassName="form__textarea"
+            inputClass="form__textarea"
             placeholder="Write your email here"
             value={this.state.senderText}
             required={true}

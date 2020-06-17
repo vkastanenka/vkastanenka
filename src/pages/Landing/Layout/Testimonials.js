@@ -22,7 +22,7 @@ class Testimonials extends Component {
       />,
       <Testimonial
         image={require("../../../assets/img/shannon.png")}
-        testimonial="Working with Victoria has been a great experience. While working on my website, she was professional, timely and had an amazing knack for capturing my vision. My website is beautiful, functional, and better than I could ever imagined."
+        testimonial="Working with Victoria has been a great experience. While working on my website, she was professional, timely and had an amazing knack for capturing my vision. My website is beautiful, functional, and better than I could have ever imagined."
         name="Shannon Martin"
         company="Dog Days Adventures"
         websiteLink="https://www.dogdaysadventures.com/"
