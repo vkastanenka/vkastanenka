@@ -21,7 +21,7 @@ class Landing extends Component {
           <NavBar />
           <About />
           <Portfolio />
-          {/* <Skills /> */}
+          <Skills />
           {/* <Testimonials /> */}
           {/* <Contact /> */}
         </main>

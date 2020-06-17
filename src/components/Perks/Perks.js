@@ -1,12 +1,10 @@
 // React
 import React from "react";
-import withSizes from "react-sizes";
-import PropTypes from "prop-types";
 
 // Components
 import Icon from "../Icon/Icon";
 
-const Perks = (props) => {
+const Perks = () => {
   return (
     <div className="perks">
       <div className="perks--top">
