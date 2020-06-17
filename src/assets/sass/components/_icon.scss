@@ -24,6 +24,15 @@
   &--x-larger {
     height: 6rem;
     width: 6rem;
+
+    @include respond(bp-smaller) {
+      height: 5rem;
+      width: 5rem;
+    }
+    @include respond(bp-smallest) {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 
   &--larger {

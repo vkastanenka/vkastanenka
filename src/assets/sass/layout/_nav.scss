@@ -33,7 +33,7 @@
     }
 
     @include respond(bp-smallest) {
-      width: 38rem;
+      width: 37rem;
     }
 
     &--left::before,
@@ -88,7 +88,7 @@
     }
 
     &:hover::before {
-      width: 130%;
+      width: 120%;
     }
   }
 

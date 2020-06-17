@@ -46,6 +46,7 @@ body {
 .heading-secondary {
   font-size: 6rem;
   font-weight: 400;
+  white-space: nowrap;
 
   @include respond(bp-medium) {
     font-size: 5rem;

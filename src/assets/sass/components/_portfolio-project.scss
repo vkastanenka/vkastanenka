@@ -1,9 +1,39 @@
 .portfolio-project {
-  width: calc(19.2rem * 2.8);
-  height: calc(10.8rem * 2.8);
+  width: calc(19.2rem * 2.75);
+  height: calc(10.8rem * 2.75);
   position: relative;
   overflow: hidden;
   box-shadow: $box-shadow--3;
+
+  @include respond(bp-larger) {
+    width: calc(19.2rem * 2.5);
+    height: calc(10.8rem * 2.5);
+  }
+
+  @include respond(bp-large) {
+    width: calc(19.2rem * 2.2);
+    height: calc(10.8rem * 2.2);
+  }
+
+  @include respond(bp-medium) {
+    width: calc(19.2rem * 3);
+    height: calc(10.8rem * 3);
+  }
+
+  @include respond(bp-small) {
+    width: calc(19.2rem * 2.5);
+    height: calc(10.8rem * 2.5);
+  }
+
+  @include respond(bp-smaller) {
+    width: calc(19.2rem * 2.2);
+    height: calc(10.8rem * 2.2);
+  }
+
+  @include respond(bp-smallest) {
+    width: calc(19.2rem * 1.8);
+    height: calc(10.8rem * 1.8);
+  }
 
   &::before {
     content: "";
@@ -35,6 +65,31 @@
     z-index: 2;
     box-shadow: $box-shadow--2;
     opacity: 1;
+
+    @include respond(bp-larger) {
+      top: -40rem;
+    }
+
+    @include respond(bp-large) {
+      top: -41rem;
+    }
+
+    @include respond(bp-medium) {
+      top: -38.6rem;
+      left: 12rem;
+    }
+
+    @include respond(bp-small) {
+      top: -40.5rem;
+    }
+
+    @include respond(bp-smaller) {
+      top: -41.4rem;
+    }
+
+    @include respond(bp-smallest) {
+      top: -42.8rem;
+    }
   }
 
   &__info {
@@ -63,11 +118,15 @@
   &:hover {
     .portfolio-project__info {
       &--name-build {
-        transform: translateY(calc(-1rem));
+        transform: translateY(-1rem);
       }
 
       &--popup-cta {
-        transform: translateY(calc(1rem));
+        transform: translateY(3rem);
+
+        @include respond(bp-smallest) {
+          transform: translateY(2rem);
+        }
       }
     }
 

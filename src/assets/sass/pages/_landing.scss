@@ -49,6 +49,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(bp-medium) {
+      flex-direction: column;
+    }
+
+    & > :first-child {
+      @include respond(bp-medium) {
+        margin-bottom: 5rem;
+      }
+    }
   }
 }
 

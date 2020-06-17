@@ -20,7 +20,7 @@ class Landing extends Component {
         <main className="main">
           <NavBar />
           <About />
-          {/* <Portfolio /> */}
+          <Portfolio />
           {/* <Skills /> */}
           {/* <Testimonials /> */}
           {/* <Contact /> */}

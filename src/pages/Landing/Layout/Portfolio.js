@@ -24,7 +24,7 @@ class Portfolio extends Component {
               featurePhoto: require("../../../assets/img/natours--feature-1-backend.png"),
               featureName: "Fully Fleshed Out Backend",
               featureSummary:
-                "RESTful API and server side rendering allows for modular and reusable design and functionality.",
+                "RESTful API and client side rendering allows for modular and reusable design and functionality.",
             },
             {
               featurePhoto: require("../../../assets/img/natours--feature-2-stripe.png"),

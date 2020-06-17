@@ -124,7 +124,7 @@ const Perks = (props) => {
 };
 
 Perks.propTypes = {
-  isMedium: PropTypes.bool.isRequired,
+  isSmaller: PropTypes.bool.isRequired,
 };
 
 const mapSizesToProps = ({ width }) => ({

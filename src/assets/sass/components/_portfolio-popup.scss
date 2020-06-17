@@ -3,11 +3,45 @@
   background-color: $color-grey-light-1;
   box-shadow: $box-shadow--1;
 
+  @include respond(bp-medium) {
+    width: calc(19.2rem * 3.5);
+  }
+
+  @include respond(bp-small) {
+    width: calc(19.2rem * 3);
+  }
+
+  @include respond(bp-smaller) {
+    width: calc(19.2rem * 2.4);
+  }
+
+  @include respond(bp-smallest) {
+    width: calc(19.2rem * 1.8);
+  }
+
   &__gallery {
     position: relative;
     border-bottom: $color-primary-darker 1.5rem solid;
     width: calc(19.2rem * 4);
     height: calc(10.8rem * 4 + 1.5rem);
+
+    @include respond(bp-medium) {
+      width: calc(19.2rem * 3.5);
+      height: calc(10.8rem * 3.5 + 1.5rem);
+    }
+
+    @include respond(bp-small) {
+      width: calc(19.2rem * 3);
+      height: auto;
+    }
+
+    @include respond(bp-smaller) {
+      width: calc(19.2rem * 2.4);
+    }
+
+    @include respond(bp-smallest) {
+      width: calc(19.2rem * 1.8);
+    }
   }
 
   &__icon-close {
@@ -26,6 +60,10 @@
 
     &:hover {
       background-color: rgba($color-black, 0.3);
+    }
+
+    @include respond(bp-small) {
+      top: 42.5%;
     }
   }
 
@@ -51,6 +89,12 @@
     position: absolute;
     bottom: -0.72rem;
     background-color: rgba($color-black, 0.75);
+
+    @include respond(bp-small) {
+      position: relative;
+      bottom: auto;
+      transform: translateY(0);
+    }
   }
 
   &__description {
