@@ -20,6 +20,21 @@
   &--large {
     font-size: 2rem;
     padding: 1.5rem 5rem;
+
+    @include respond(bp-large) {
+      padding: 1.25rem 4.5rem;
+      font-size: 1.8rem;
+    }
+
+    @include respond(bp-smaller) {
+      padding: 1.25rem 4rem;
+      font-size: 1.7rem;
+    }
+
+    @include respond(bp-smallest) {
+      padding: 1rem 3.5rem;
+      font-size: 1.6rem;
+    }
   }
 
   &--small {

@@ -10,6 +10,32 @@
     justify-content: space-between;
     position: relative;
 
+    @include respond(bp-larger) {
+      width: 35rem;
+    }
+
+    @include respond(bp-large) {
+      width: 33rem;
+    }
+
+    @include respond(bp-medium) {
+      width: 65rem;
+      padding-bottom: 1rem;
+      border-bottom: 0.3rem solid $color-grey-light-1;
+    }
+
+    @include respond(bp-small) {
+      width: 58rem;
+    }
+
+    @include respond(bp-smaller) {
+      width: 45rem;
+    }
+
+    @include respond(bp-smallest) {
+      width: 38rem;
+    }
+
     &--left::before,
     &--right::after {
       content: "";
@@ -17,16 +43,32 @@
       width: 50.5rem;
       position: absolute;
       background-color: $color-grey-light-1;
+
+      @include respond(bp-larger) {
+        width: 44.5rem;
+      }
+
+      @include respond(bp-large) {
+        width: 38.5rem;
+      }
     }
 
     &--left::before {
       top: -1rem;
       left: -3rem;
+
+      @include respond(bp-large) {
+        left: -1rem;
+      }
     }
 
     &--right::after {
       bottom: -1rem;
       right: -3rem;
+
+      @include respond(bp-large) {
+        right: -1rem;
+      }
     }
   }
 
@@ -59,6 +101,18 @@
     padding: 2.5rem;
     position: relative;
 
+    @include respond(bp-larger) {
+      height: 19rem;
+      width: 19rem;
+      margin: 0 4rem;
+    }
+
+    @include respond(bp-large) {
+      margin: 0 2rem;
+      height: 18rem;
+      width: 18rem;
+    }
+
     &::before,
     &::after {
       content: "";
@@ -67,6 +121,14 @@
       background-color: $color-grey-light-1;
       position: absolute;
       transform: rotate(45deg);
+
+      @include respond(bp-larger) {
+        height: 5rem;
+      }
+
+      @include respond(bp-large) {
+        height: 4rem;
+      }
     }
 
     &::before {
