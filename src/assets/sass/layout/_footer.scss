@@ -2,12 +2,9 @@
   background-color: $color-grey-dark-4;
 
   &__content {
-    max-width: 114rem;
-    padding: 6rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
   }
 
   &__info {
@@ -25,6 +22,27 @@
     padding: 2.5rem;
     position: relative;
 
+    @include respond(bp-medium) {
+      height: 18rem;
+      width: 18rem;
+    }
+
+    @include respond(bp-small) {
+      height: 17rem;
+      width: 17rem;
+    }
+
+    @include respond(bp-smaller) {
+      height: 15rem;
+      width: 15rem;
+    }
+
+    @include respond(bp-smallest) {
+      height: 12.5rem;
+      width: 12.5rem;
+      padding: 2rem;
+    }
+
     &::before,
     &::after {
       content: "";
@@ -33,6 +51,22 @@
       background-color: $color-grey-light-1;
       position: absolute;
       transform: rotate(45deg);
+
+      @include respond(bp-medium) {
+        height: 4.7rem;
+      }
+  
+      @include respond(bp-small) {
+        height: 4rem;
+      }
+  
+      @include respond(bp-smaller) {
+        height: 3.5rem;
+      }
+
+      @include respond(bp-smallest) {
+        height: 3rem;
+      }
     }
 
     &::before {

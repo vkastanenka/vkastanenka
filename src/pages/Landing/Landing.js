@@ -25,7 +25,7 @@ class Landing extends Component {
           <Testimonials />
           <Contact />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </Auxiliary>
     );
   }
