@@ -91,6 +91,10 @@
     align-items: center;
     margin: 0 2rem;
 
+    @include respond(bp-smaller) {
+      margin: 0 1rem;
+    }
+
     & > * {
       margin: 0 1rem;
     }
@@ -100,6 +104,16 @@
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
+
+    @include respond(bp-smaller) {
+      height: 1.75rem;
+      width: 1.75rem;
+    }
+
+    @include respond(bp-smallest) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
 
     &--selected {
       background-color: $color-primary-dark;

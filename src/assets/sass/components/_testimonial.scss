@@ -12,6 +12,21 @@
     border: 2px solid $color-primary;
     box-shadow: $box-shadow--3;
     margin-bottom: 2rem;
+
+    @include respond(bp-medium) {
+      height: 18rem;
+      width: 18rem;
+    }
+
+    @include respond(bp-smaller) {
+      height: 16rem;
+      width: 16rem;
+    }
+
+    @include respond(bp-smallest) {
+      height: 15rem;
+      width: 15rem;
+    }
   }
 
   &__image {

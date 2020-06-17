@@ -22,7 +22,7 @@ class Landing extends Component {
           <About />
           <Portfolio />
           <Skills />
-          {/* <Testimonials /> */}
+          <Testimonials />
           {/* <Contact /> */}
         </main>
         {/* <Footer /> */}

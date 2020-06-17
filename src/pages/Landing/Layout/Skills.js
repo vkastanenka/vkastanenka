@@ -10,7 +10,7 @@ const Skills = () => {
           Technological Skills
         </h2>
         <h3 className="heading-tertiary ma-bt--3">
-          I always strive to learn the best that I can.
+          I always enjoy learning new things.
         </h3>
         <div className="grid grid--skills fc-grey-light-1">
           <div className="skills__skill">
