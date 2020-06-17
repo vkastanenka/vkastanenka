@@ -1,18 +1,83 @@
 .perks {
   display: flex;
-  padding: 0 2rem;
+  justify-content: space-between;
   position: relative;
 
-  &::before {
+  @include respond(bp-smaller) {
+  }
+
+  &--top,
+  &--bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    & > :first-child {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: 4rem;
-    left: 50%;
     transform: translateX(-50%);
+    background-color: $color-grey-dark-1;
+    left: 50%;
     z-index: -2;
     width: 90rem;
     height: 1px;
-    background-color: $color-grey-dark-1;
+
+    @include respond(bp-larger) {
+      width: 80rem;
+    }
+
+    @include respond(bp-large) {
+      width: 70rem;
+    }
+
+    @include respond(bp-medium) {
+      width: 60rem;
+    }
+
+    @include respond(bp-small) {
+      width: 50rem;
+    }
+
+    @include respond(bp-smaller) {
+      width: 30rem;
+    }
+
+    @include respond(bp-smallest) {
+      width: 20rem;
+    }
+  }
+
+  &::before {
+    top: 4rem;
+
+    @include respond(bp-medium) {
+      top: 3rem;
+    }
+
+    @include respond(bp-smallest) {
+      top: 2.2rem;
+    }
+  }
+
+  &::after {
+    bottom: 14.5rem;
+    display: none;
+
+    @include respond(bp-smaller) {
+      display: inline-block;
+    }
+
+    @include respond(bp-smallest) {
+      display: inline-block;
+      bottom: 14.8rem;
+    }
   }
 
   &__perk-icon {
@@ -28,6 +93,21 @@
       height: 12rem;
       width: 12rem;
       background-color: $color-grey-light-1;
+
+      @include respond(bp-medium) {
+        height: 11rem;
+        width: 11rem;
+      }
+
+      @include respond(bp-small) {
+        height: 10rem;
+        width: 10rem;
+      }
+
+      @include respond(bp-smallest) {
+        height: 9rem;
+        width: 9rem;
+      }
     }
   }
 }

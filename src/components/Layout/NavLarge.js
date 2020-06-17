@@ -82,7 +82,7 @@ NavLarge.propTypes = {
 };
 
 const mapSizesToProps = ({ width }) => ({
-  isMedium: width < 800,
+  isMedium: width <= 800,
 });
 
 export default withSizes(mapSizesToProps)(NavLarge);

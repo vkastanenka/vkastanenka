@@ -4,6 +4,21 @@
   &--massive {
     height: 7rem;
     width: 7rem;
+
+    @include respond(bp-medium) {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    @include respond(bp-small) {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    @include respond(bp-smallest) {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 
   &--x-larger {
