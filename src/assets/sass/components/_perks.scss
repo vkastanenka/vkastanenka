@@ -3,18 +3,16 @@
   justify-content: space-between;
   position: relative;
 
-  @include respond(bp-smaller) {
-  }
-
   &--top,
   &--bottom {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    @include respond(bp-smaller) {
+      flex-direction: column;
 
-    & > :first-child {
-      margin-bottom: 6rem;
+      & > :first-child {
+        margin-bottom: 6rem;
+      }
     }
   }
 
