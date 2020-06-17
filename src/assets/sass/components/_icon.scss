@@ -29,6 +29,16 @@
   &--large {
     height: 2rem;
     width: 2rem;
+
+    @include respond(bp-smaller) {
+      height: 1.75rem;
+      width: 1.75rem;
+    }
+
+    @include respond(bp-smallest) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
 
   &--medium {

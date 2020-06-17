@@ -8,7 +8,7 @@ import ScrollLink from "../HigherOrder/ScrollLink";
 const NavBar = () => {
   return (
     <nav className="nav fc-grey-light-1">
-      <ul className="nav__list">
+      <ul className="nav__list section">
         <li className="nav__list-item">
           <ScrollLink section="home">Home</ScrollLink>
         </li>

@@ -8,6 +8,38 @@
     text-shadow: 0px 5px 10px rgba($color-black, 0.1);
     margin-bottom: 2rem;
   }
+
+  @include respond(bp-massive) {
+    width: 130rem;
+  }
+
+  @include respond(bp-largest) {
+    width: 116rem;
+  }
+
+  @include respond(bp-larger) {
+    width: 102rem;
+  }
+
+  @include respond(bp-large) {
+    width: 88rem;
+  }
+
+  @include respond(bp-medium) {
+    width: 74rem;
+  }
+
+  @include respond(bp-small) {
+    width: 60rem;
+  }
+
+  @include respond(bp-smaller) {
+    width: 46rem;
+  }
+
+  @include respond(bp-smallest) {
+    width: 32rem;
+  }
 }
 
 .portfolio {

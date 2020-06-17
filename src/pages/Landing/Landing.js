@@ -17,14 +17,14 @@ class Landing extends Component {
     return (
       <Auxiliary>
         <Header />
-        {/* <main className="main">
+        <main className="main">
           <NavBar />
-          <About />
-          <Portfolio />
-          <Skills />
-          <Testimonials />
-          <Contact />
-        </main> */}
+          {/* <About /> */}
+          {/* <Portfolio /> */}
+          {/* <Skills /> */}
+          {/* <Testimonials /> */}
+          {/* <Contact /> */}
+        </main>
         {/* <Footer /> */}
       </Auxiliary>
     );

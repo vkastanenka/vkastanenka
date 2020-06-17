@@ -150,7 +150,6 @@
   background-color: $color-primary-darker;
   position: sticky;
   top: 0;
-  padding: 1.5rem 0;
   z-index: 500;
   box-shadow: $box-shadow--2;
   border-bottom: 0.2rem solid $color-secondary-dark;
@@ -159,11 +158,22 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 114rem;
-    margin: 0 auto;
+    padding: 2rem 0 !important;
+
+    @include respond(bp-small) {
+      justify-content: center;
+    }
 
     & > :not(:last-child) {
       margin-right: 2rem;
+
+      @include respond(bp-smaller) {
+        margin-right: 1rem;
+      }
+
+      @include respond(bp-smallest) {
+        margin-right: 0.5rem;
+      }
     }
   }
 
@@ -182,6 +192,10 @@
 
       & > :first-child {
         margin-right: 1rem;
+
+        @include respond(bp-smallest) {
+          margin-right: 0.5rem;
+        }
       }
 
       &:hover > svg {
