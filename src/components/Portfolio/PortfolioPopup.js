@@ -22,6 +22,8 @@ class PortfolioPopup extends Component {
             <div className="portfolio-popup__gallery">
               {/* eslint-disable-next-line */}
               <img
+                srcSet={features[currentFeature].featurePhotoSet}
+                sizes={features[currentFeature].featurePhotoSetSizes}
                 src={features[currentFeature].featurePhoto}
                 alt="Gallery Image"
                 className="portfolio-popup__image"

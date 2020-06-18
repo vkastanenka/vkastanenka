@@ -15,11 +15,19 @@
   &__content {
     @extend %flex-abs-center;
     flex-direction: column;
-    background-image: $gradient-background-1;
+    background-image: $gradient-background-1--desktop;
     @extend %background-cover;
     width: 100%;
     height: 100%;
     box-shadow: $box-shadow--1;
     padding: 2rem;
+
+    @include respond(bp-medium) {
+      background-image: $gradient-background-1--tablet;
+    }
+
+    @include respond(bp-smallest) {
+      background-image: $gradient-background-1--mobile;
+    }
   }
 }

@@ -2,7 +2,7 @@
 import React from "react";
 import ScrollLink from "../../../components/HigherOrder/ScrollLink";
 import withSizes from "react-sizes";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 // Components
 import Icon from "../../../components/Icon/Icon";
@@ -14,7 +14,9 @@ const Header = (props) => {
   const logo = isMedium ? (
     <div className="header__logo-container ma-bt--4">
       <img
-        src={require("../../../assets/img/pyramid-logo--white.png")}
+        src={require("../../../assets/img/logo--desktop.png")}
+        srcSet={`${require("../../../assets/img/logo--mobile.png")} 219w, ${require("../../../assets/img/logo--desktop.png")} 255w`}
+        sizes="(max-width: 25em) 219px, 255px"
         alt="Logo"
         className="header__logo"
       />
@@ -26,7 +28,7 @@ const Header = (props) => {
       <ShootingStars />
       <div className="header__content fc-grey-light-1 ta-center">
         {logo}
-        <NavLarge className={isMedium ? 'ma-bt--3' : null} />
+        <NavLarge className={isMedium ? "ma-bt--3" : null} />
         <div className="header__links ma-bt--3">
           <div className="header__links--left">
             <a
@@ -89,8 +91,8 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  isMedium: PropTypes.bool.isRequired
-}
+  isMedium: PropTypes.bool.isRequired,
+};
 
 const mapSizesToProps = ({ width }) => ({
   isMedium: width <= 800,

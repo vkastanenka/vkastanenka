@@ -35,19 +35,33 @@ $gradient-primary: linear-gradient(
   rgba($color-primary-darker, 1)
 );
 
-$gradient-background-1: linear-gradient(
+$gradient-background-1--desktop: linear-gradient(
     135deg,
     rgba($color-primary-darker, 0.5),
     rgba($color-secondary-dark, 0.5)
   ),
-  url("../img/landing.jpg");
+  url("../img/landing--desktop.png");
 
-$gradient-secondary: linear-gradient(
+$gradient-background-1--tablet: linear-gradient(
+    135deg,
+    rgba($color-primary-darker, 0.5),
+    rgba($color-secondary-dark, 0.5)
+  ),
+  url("../img/landing--tablet.png");
+
+$gradient-background-1--mobile: linear-gradient(
+    135deg,
+    rgba($color-primary-darker, 0.5),
+    rgba($color-secondary-dark, 0.5)
+  ),
+  url("../img/landing--mobile.png");
+
+$gradient-background-2: linear-gradient(
     135deg,
     rgba($color-secondary, 0.4),
     rgba($color-secondary-dark, 0.6)
   ),
-  url("../img/background--1.jpg");
+  url("../img/portfolio-showcase-overlay.png");
 
 // SHADOWS
 $box-shadow--1: 2px 2px 10px rgba($color-black, 0.75);

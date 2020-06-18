@@ -43,7 +43,7 @@
     left: -5rem;
     height: 60rem;
     width: 70rem;
-    background-image: $gradient-secondary;
+    background-image: $gradient-background-2;
     @extend %background-cover;
     transform: rotate(-30deg) translateX(-70rem);
     z-index: 1;

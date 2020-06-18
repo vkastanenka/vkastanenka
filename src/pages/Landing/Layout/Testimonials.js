@@ -14,14 +14,18 @@ class Testimonials extends Component {
     const { currentTestimonial } = this.state;
     const testimonials = [
       <Testimonial
-        image={require("../../../assets/img/rena.png")}
+        image={require("../../../assets/img/testimonial-rena--desktop.png")}
+        imageSrcSet={`${require("../../../assets/img/testimonial-rena--mobile.png")} 150w, ${require("../../../assets/img/testimonial-rena--tablet.png")} 180w, ${require("../../../assets/img/testimonial-rena--desktop.png")} 200w`}
+        imageSrcSetSizes="(max-width: 25em) 150px, (max-width: 50em) 180px, 200px"
         testimonial="Victoria is a great person to work with. Communication was clear and she always replied very quickly to our correspondence. It was a very easy and worry-free time working with her as she would always give previews to any changes made well ahead of time, and I would recommend that anybody working in web design reach out for her great service."
         name="Rena Pankowska"
         company="Featherbox Studio"
         websiteLink="https://featherboxstudio.com/"
       />,
       <Testimonial
-        image={require("../../../assets/img/shannon.png")}
+        image={require("../../../assets/img/testimonial-shannon--desktop.png")}
+        imageSrcSet={`${require("../../../assets/img/testimonial-shannon--mobile.png")} 150w, ${require("../../../assets/img/testimonial-shannon--tablet.png")} 180w, ${require("../../../assets/img/testimonial-shannon--desktop.png")} 200w`}
+        imageSrcSetSizes="(max-width: 25em) 150px, (max-width: 50em) 180px, 200px"
         testimonial="Working with Victoria has been a great experience. While working on my website, she was professional, timely and had an amazing knack for capturing my vision. My website is beautiful, functional, and better than I could have ever imagined."
         name="Shannon Martin"
         company="Dog Days Adventures"

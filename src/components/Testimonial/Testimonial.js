@@ -11,6 +11,8 @@ const Testimonial = (props) => {
       <div className="testimonial__image-container">
         <img
           src={props.image}
+          srcSet={props.imageSrcSet}
+          sizes={props.imageSrcSetSizes}
           alt="Testimonial Person"
           className="testimonial__image"
         />
@@ -39,6 +41,8 @@ const Testimonial = (props) => {
 
 Testimonial.propTypes = {
   image: PropTypes.string.isRequired,
+  imageSrcSet: PropTypes.string.isRequired,
+  imageSrcSetSizes: PropTypes.string.isRequired,
   testimonial: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,

@@ -10,16 +10,20 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__content section fc-grey-light-1">
         <div className="footer__info">
-          <p className='text-larger fw-medium'>Victoria Kastanenka</p>
-          <p className='text-larger fw-medium'>&copy; {new Date().getFullYear()}</p>
+          <p className="text-larger fw-medium">Victoria Kastanenka</p>
+          <p className="text-larger fw-medium">
+            &copy; {new Date().getFullYear()}
+          </p>
         </div>
         <div className="footer__info ma-bt--3">
-          <p className='text-large'>vkastanenka@gmail.com</p>
-          <p className='text-large'>(519) 215-1033</p>
+          <p className="text-large">vkastanenka@gmail.com</p>
+          <p className="text-large">(519) 215-1033</p>
         </div>
         <div className="footer__logo-container ma-bt--3">
           <img
-            src={require("../../assets/img/pyramid-logo--white.png")}
+            src={require("../../assets/img/logo--desktop.png")}
+            srcSet={`${require("../../assets/img/logo--mobile.png")} 219w, ${require("../../assets/img/logo--desktop.png")} 255w`}
+            sizes="(max-width: 25em) 219px, 255px"
             alt="Logo"
             className="footer__logo"
           />

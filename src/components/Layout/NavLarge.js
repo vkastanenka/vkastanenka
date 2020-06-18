@@ -31,7 +31,9 @@ const NavLarge = (props) => {
           </ul>
           <div className="nav-large__nav-logo-container">
             <img
-              src={require("../../assets/img/pyramid-logo--white.png")}
+              src={require("../../assets/img/logo--desktop.png")}
+              srcSet={`${require("../../assets/img/logo--mobile.png")} 219w, ${require("../../assets/img/logo--desktop.png")} 255w`}
+              sizes="(max-width: 25em) 219px, 255px"
               alt="Logo"
               className="nav-large__nav-logo"
             />
