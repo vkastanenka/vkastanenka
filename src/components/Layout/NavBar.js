@@ -2,8 +2,11 @@
 import React from "react";
 
 // Components
-import Icon from '../Icon/Icon';
+import Icon from "../Icon/Icon";
 import ScrollLink from "../HigherOrder/ScrollLink";
+
+// Assets
+import resume from "../../assets/img/Victoria_Kastanenka_Resume.pdf";
 
 const NavBar = () => {
   return (
@@ -28,8 +31,10 @@ const NavBar = () => {
           <ScrollLink section="contact">Contact</ScrollLink>
         </li>
         <li className="nav__list-item nav__list-item--icon">
-          <ScrollLink section="resume">Resume</ScrollLink>
-          <Icon type='download' className='icon icon--white icon--large' />
+          <a href={resume} rel="noopener noreferrer" target="_blank">
+            Resume
+          </a>
+          <Icon type="download" className="icon icon--white icon--large" />
         </li>
       </ul>
     </nav>

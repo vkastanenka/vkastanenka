@@ -43,7 +43,7 @@ const Perks = () => {
           </div>
           <p className="text-larger fw-medium">Quick Learner</p>
           <p className="text-large pd-x--lg">
-            Self taught in full stack development
+            Self taught in full-stack development
           </p>
         </div>
         <div className="perks__perk">

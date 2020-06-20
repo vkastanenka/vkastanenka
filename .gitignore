@@ -12,6 +12,7 @@
 /src/assets/node_modules
 
 # misc
+/build
 .DS_Store
 .env
 .env.local

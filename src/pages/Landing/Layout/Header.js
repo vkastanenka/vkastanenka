@@ -34,7 +34,7 @@ const Header = (props) => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={"https://www.linkedin.com/"}
+              href={"https://www.linkedin.com/in/vkastanenka/"}
             >
               <Icon
                 type="linkedin"
@@ -68,7 +68,7 @@ const Header = (props) => {
             Victoria Kastanenka
           </h1>
           <p className="text-large">
-            I'm a <span className="fw-medium">full stack web developer</span>{" "}
+            I'm a <span className="fw-medium">full-stack web developer</span>{" "}
             who is always eager to learn and create as best they can.
           </p>
           <p className="text-large">

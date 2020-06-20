@@ -7,6 +7,9 @@ import PropTypes from "prop-types";
 import Auxiliary from "../HigherOrder/Auxiliary";
 import ScrollLink from "../HigherOrder/ScrollLink";
 
+// Assets
+import resume from "../../assets/img/Victoria_Kastanenka_Resume.pdf";
+
 const NavLarge = (props) => {
   const { isMedium } = props;
 
@@ -46,7 +49,9 @@ const NavLarge = (props) => {
               <ScrollLink section="contact">Contact</ScrollLink>
             </li>
             <li className="nav-large__nav-list-item fw-medium text-larger">
-              <ScrollLink section="resume">Resume</ScrollLink>
+              <a href={resume} rel="noopener noreferrer" target="_blank">
+                Resume
+              </a>
             </li>
           </ul>
         </Auxiliary>
@@ -69,7 +74,9 @@ const NavLarge = (props) => {
               <ScrollLink section="contact">Contact</ScrollLink>
             </li>
             <li className="nav-large__nav-list-item fw-medium text-larger">
-              <ScrollLink section="resume">Resume</ScrollLink>
+              <a href={resume} rel="noopener noreferrer" target="_blank">
+                Resume
+              </a>
             </li>
           </ul>
         </Auxiliary>
