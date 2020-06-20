@@ -17,7 +17,7 @@ class Testimonials extends Component {
         image={require("../../../assets/img/testimonial-rena--desktop.png")}
         imageSrcSet={`${require("../../../assets/img/testimonial-rena--mobile.png")} 150w, ${require("../../../assets/img/testimonial-rena--tablet.png")} 180w, ${require("../../../assets/img/testimonial-rena--desktop.png")} 200w`}
         imageSrcSetSizes="(max-width: 25em) 150px, (max-width: 50em) 180px, 200px"
-        testimonial="Victoria is a great person to work with. Communication was clear and she always replied very quickly to our correspondence. It was a very easy and worry-free time working with her as she would always give previews to any changes made well ahead of time, and I would recommend that anybody working in web design reach out for her great service."
+        testimonial="Victoria is a great person to work with. After designing a site for my current project, its Kickstarter had a noticeable improvement in progressing to its completion. It was a very easy and worry-free time working with her as she would always give previews to any changes made well ahead of time, and I highly recommend her great service."
         name="Rena Pankowska"
         company="Featherbox Studio"
         websiteLink="https://featherboxstudio.com/"
