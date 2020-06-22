@@ -1,14 +1,12 @@
 {
-  "name": "vkastanenka_v1_styling",
+  "name": "vkastanenka",
   "version": "1.0.0",
   "license": "ISC",
   "author": "Victoria Kastanenka",
   "description": "Client side developer dependencies needed for styling vkastanenka portfolio website",
   "keywords": [
-    "web development",
-    "web developer",
-    "portfolio",
-    "react",
+    "stylesheet",
+    "sass",
     "client side"
   ],
   "scripts": {

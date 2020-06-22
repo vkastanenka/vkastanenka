@@ -73,14 +73,14 @@ class Portfolio extends Component {
           repositoryLink="https://github.com/vkastanenka/natours"
         />
       );
-    } else if (viewing === "DevConnector") {
+    } else if (viewing === "Devbook") {
       popup = (
         <PortfolioPopup
           closePopup={() => this.setState({ viewing: "" })}
           features={[
             {
-              featurePhoto: require("../../../assets/img/devconnector-f1-timeline--desktop.png"),
-              featurePhotoSet: `${require("../../../assets/img/devconnector-f1-timeline--mobile.png")} 346w, ${require("../../../assets/img/devconnector-f1-timeline--tablet.png")} 672w, ${require("../../../assets/img/devconnector-f1-timeline--desktop.png")} 768w`,
+              featurePhoto: require("../../../assets/img/devbook-f1-timeline--desktop.png"),
+              featurePhotoSet: `${require("../../../assets/img/devbook-f1-timeline--mobile.png")} 346w, ${require("../../../assets/img/devbook-f1-timeline--tablet.png")} 672w, ${require("../../../assets/img/devbook-f1-timeline--desktop.png")} 768w`,
               featurePhotoSetSizes:
                 "(max-width: 25em) 346px, (max-width: 50em) 672px, 768px",
               featureName: "User Timelines",
@@ -88,8 +88,8 @@ class Portfolio extends Component {
                 "Users can create posts on their own timelines, comment on any post, like and dislike any post or comment, and delete their own posts.",
             },
             {
-              featurePhoto: require("../../../assets/img/devconnector-f2-follows--desktop.png"),
-              featurePhotoSet: `${require("../../../assets/img/devconnector-f2-follows--mobile.png")} 346w, ${require("../../../assets/img/devconnector-f2-follows--tablet.png")} 672w, ${require("../../../assets/img/devconnector-f2-follows--desktop.png")} 768w`,
+              featurePhoto: require("../../../assets/img/devbook-f2-follows--desktop.png"),
+              featurePhotoSet: `${require("../../../assets/img/devbook-f2-follows--mobile.png")} 346w, ${require("../../../assets/img/devbook-f2-follows--tablet.png")} 672w, ${require("../../../assets/img/devbook-f2-follows--desktop.png")} 768w`,
               featurePhotoSetSizes:
                 "(max-width: 25em) 346px, (max-width: 50em) 672px, 768px",
               featureName: "Follow System",
@@ -97,8 +97,8 @@ class Portfolio extends Component {
                 "Users can follow other users to have their posts appear chronologically on their own personal timelines.",
             },
             {
-              featurePhoto: require("../../../assets/img/devconnector-f3-authentication--desktop.png"),
-              featurePhotoSet: `${require("../../../assets/img/devconnector-f3-authentication--mobile.png")} 346w, ${require("../../../assets/img/devconnector-f3-authentication--tablet.png")} 672w, ${require("../../../assets/img/devconnector-f3-authentication--desktop.png")} 768w`,
+              featurePhoto: require("../../../assets/img/devbook-f3-authentication--desktop.png"),
+              featurePhotoSet: `${require("../../../assets/img/devbook-f3-authentication--mobile.png")} 346w, ${require("../../../assets/img/devbook-f3-authentication--tablet.png")} 672w, ${require("../../../assets/img/devbook-f3-authentication--desktop.png")} 768w`,
               featurePhotoSetSizes:
                 "(max-width: 25em) 346px, (max-width: 50em) 672px, 768px",
               featureName: "Complete User Authentication",
@@ -106,8 +106,8 @@ class Portfolio extends Component {
                 "Users can create and edit accounts in order to access the functionality of the website.",
             },
             {
-              featurePhoto: require("../../../assets/img/devconnector-f4-profile--desktop.png"),
-              featurePhotoSet: `${require("../../../assets/img/devconnector-f4-profile--mobile.png")} 346w, ${require("../../../assets/img/devconnector-f4-profile--tablet.png")} 672w, ${require("../../../assets/img/devconnector-f4-profile--desktop.png")} 768w`,
+              featurePhoto: require("../../../assets/img/devbook-f4-profile--desktop.png"),
+              featurePhotoSet: `${require("../../../assets/img/devbook-f4-profile--mobile.png")} 346w, ${require("../../../assets/img/devbook-f4-profile--tablet.png")} 672w, ${require("../../../assets/img/devbook-f4-profile--desktop.png")} 768w`,
               featurePhotoSetSizes:
                 "(max-width: 25em) 346px, (max-width: 50em) 672px, 768px",
               featureName: "Robust Profile Customization",
@@ -115,8 +115,8 @@ class Portfolio extends Component {
                 "Users can create developer profiles that appear on their user cards where they can add their education and experiences.",
             },
             {
-              featurePhoto: require("../../../assets/img/devconnector-f5-github--desktop.png"),
-              featurePhotoSet: `${require("../../../assets/img/devconnector-f5-github--mobile.png")} 346w, ${require("../../../assets/img/devconnector-f5-github--tablet.png")} 672w, ${require("../../../assets/img/devconnector-f5-github--desktop.png")} 768w`,
+              featurePhoto: require("../../../assets/img/devbook-f5-github--desktop.png"),
+              featurePhotoSet: `${require("../../../assets/img/devbook-f5-github--mobile.png")} 346w, ${require("../../../assets/img/devbook-f5-github--tablet.png")} 672w, ${require("../../../assets/img/devbook-f5-github--desktop.png")} 768w`,
               featurePhotoSetSizes:
                 "(max-width: 25em) 346px, (max-width: 50em) 672px, 768px",
               featureName: "Github Integration",
@@ -124,11 +124,11 @@ class Portfolio extends Component {
                 "Users can provide their Github usernames to have links to their 5 most recent repositories available on their user card.",
             },
           ]}
-          name="DevConnector"
+          name="Devbook"
           description="Social Media Network for Developers"
-          summary="DevConnector is a social media network designed for developers in mind. Users can create an account, follow users, create posts and comments, develop profiles, and search for other developers."
-          projectLink="https://vkastanenka-devconnector.herokuapp.com/"
-          repositoryLink="https://github.com/vkastanenka/devconnector"
+          summary="Devbook is a social media network designed for developers in mind. Users can create an account, follow users, create posts and comments, develop profiles, and search for other developers."
+          projectLink="https://vkastanenka-devbook.herokuapp.com/"
+          repositoryLink="https://github.com/vkastanenka/devbook"
         />
       );
     }
@@ -151,11 +151,11 @@ class Portfolio extends Component {
                 imageSrcSetSizes="(max-width: 25em) 346px, 528px"
               />
               <PortfolioShowcase
-                name="DevConnector"
+                name="Devbook"
                 build="React JS / Node.js"
-                setPopup={() => this.setState({ viewing: "DevConnector" })}
-                image={require("../../../assets/img/devconnector-showcase--desktop.png")}
-                imageSrcSet={`${require("../../../assets/img/devconnector-showcase--mobile.png")} 346w, ${require("../../../assets/img/devconnector-showcase--desktop.png")} 528w`}
+                setPopup={() => this.setState({ viewing: "Devbook" })}
+                image={require("../../../assets/img/devbook-showcase--desktop.png")}
+                imageSrcSet={`${require("../../../assets/img/devbook-showcase--mobile.png")} 346w, ${require("../../../assets/img/devbook-showcase--desktop.png")} 528w`}
                 imageSrcSetSizes="(max-width: 25em) 346px, 528px"
               />
             </div>

@@ -1,5 +1,5 @@
 {
-  "name": "vkastanenka_v1",
+  "name": "vkastanenka",
   "version": "1.0.0",
   "license": "ISC",
   "author": "Victoria Kastanenka",
@@ -9,6 +9,8 @@
     "web developer",
     "portfolio",
     "react",
+    "redux",
+    "state management",
     "client side"
   ],
   "private": true,

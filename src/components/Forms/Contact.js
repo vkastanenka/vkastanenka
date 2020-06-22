@@ -120,14 +120,14 @@ class Contact extends Component {
             name="senderName"
             id="senderName"
             htmlFor="senderName"
-            placeholder="Full name"
+            placeholder="Name"
             value={this.state.senderName}
             required={true}
             onChange={(e) => this.onChange(e)}
-            label="Full name"
+            label="Name"
           />
           <InputGroup
-            type="senderEmail"
+            type="email"
             name="senderEmail"
             id="senderEmail"
             htmlFor="senderEmail"

@@ -26,7 +26,7 @@ class Testimonials extends Component {
         image={require("../../../assets/img/testimonial-shannon--desktop.png")}
         imageSrcSet={`${require("../../../assets/img/testimonial-shannon--mobile.png")} 150w, ${require("../../../assets/img/testimonial-shannon--tablet.png")} 180w, ${require("../../../assets/img/testimonial-shannon--desktop.png")} 200w`}
         imageSrcSetSizes="(max-width: 25em) 150px, (max-width: 50em) 180px, 200px"
-        testimonial="Working with Victoria has been a great experience. While working on my website, she was professional, timely and had an amazing knack for capturing my vision. My website is beautiful, functional, and better than I could have ever imagined."
+        testimonial="Working with Victoria has been a great experience. While working on my website, she was professional, timely and had an amazing knack for capturing my vision. Correspondence was always a pleasure, and I am happy with the professional relationship we've established. My website is beautiful, functional, and better than I could have ever imagined."
         name="Shannon Martin"
         company="Dog Days Adventures"
         websiteLink="https://www.dogdaysadventures.com/"
