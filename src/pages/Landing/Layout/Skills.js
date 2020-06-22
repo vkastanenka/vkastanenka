@@ -33,7 +33,7 @@ const Skills = () => {
             <DevIcon icon="sass" className="icon icon--larger icon--white" />
           </div>
           <div className="skills__skill">
-            <p className="text-large fw-medium">Github</p>
+            <p className="text-large fw-medium">Git / Github</p>
             <DevIcon icon="github" className="icon icon--larger icon--white" />
           </div>
           <div className="skills__skill">
